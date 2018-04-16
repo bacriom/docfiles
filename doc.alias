@@ -1,0 +1,7 @@
+function mci(){
+    mvn -pl "$1" clean install -Pdev -Dspring.profiles.active=dev  
+}
+
+function sbr(){
+     mvn -pl "$1" spring-boot:run 
+}
