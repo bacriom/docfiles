@@ -6,7 +6,7 @@ git config --global alias.st status
 
 #MAVEN ALIAS
 function mci(){
-    mvn -pl "$1" clean install -Pdev -Dspring.profiles.active=dev  
+    mvn -pl "$1" clean install -P"$2" -Dspring.profiles.active="$3"  
 }
 
 function sbr(){
