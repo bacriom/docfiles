@@ -5,6 +5,8 @@ git config --global alias.ci commit
 git config --global alias.st status
 
 #MAVEN ALIAS
+vim .bash_aliases
+
 function mci(){
     mvn -pl "$1" clean install -P"$2" -Dspring.profiles.active="$3"  
 }
@@ -12,3 +14,5 @@ function mci(){
 function sbr(){
      mvn -pl "$1" spring-boot:run 
 }
+
+:wq
