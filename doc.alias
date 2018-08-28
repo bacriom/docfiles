@@ -15,4 +15,8 @@ function sbr(){
      mvn -pl "$1" spring-boot:run 
 }
 
+spring boot run 
+
+mvn spring-boot:run -P{profile} -Dspring-profiles-active={profile}
+
 :wq
